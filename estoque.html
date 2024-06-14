@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Estoque</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/logo.png" alt="Logo da Empresa" class="logo">
+            <h1>Gerenciamento de Estoque</h1>
+        </header>
+        <form id="productForm">
+            <input type="text" id="productCode" placeholder="Código do Produto" required>
+            <input type="text" id="productName" placeholder="Nome do Produto" required>
+            <input type="number" id="productQuantity" placeholder="Quantidade" required>
+            <input type="number" id="productPrice" placeholder="Preço" required>
+            <button type="submit">Adicionar Produto</button>
+        </form>
+        <h2>Produtos</h2>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Produtos serão listados aqui -->
+            </tbody>
+        </table>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gerenciamento de Estoque</h1>
+    
+    <div id="supplier-contacts">
+        <h2>Contatos de Fornecedores</h2>
+        <input type="text" id="supplier-name" placeholder="Nome do Fornecedor">
+        <input type="text" id="supplier-phone" placeholder="Telefone do Fornecedor">
+        <input type="text" id="supplier-email" placeholder="E-mail do Fornecedor">
+        <button onclick="addSupplier()">Adicionar Fornecedor</button>
+        <ul id="supplier-list">
+            <!-- Lista de fornecedores será preenchida dinamicamente -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
